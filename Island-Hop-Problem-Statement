@@ -1,0 +1,52 @@
+Problem Name: Island Hop
+Category: Shortest Path
+
+Statement:
+Agent Dave is on a mission in an archipelago of many small islands.
+Every island in the archipelago is connected to every other island by a bridge with a toll.
+Dave is emailed missions each day which tell Dave which island Dave needs to drive to and how much he is allowed to spend on tolls.
+Dave wants to find the shortest path which he is able to take with the given budget each day.
+
+Input:
+Input begins with an integer n, the number of islands in the archipelago Dave is traveling through.
+On the next line there is a single integer M, the total number of missions Dave will be given.
+Next n lines follow with n integers (c_1, c_2, ..., c_n) each separated by a space. The integer number i on line j represents the toll in dollars of traveling from island j to island i.
+Note: in all cases the cost of traveling from island i to island j is the same as the cost of traveling from island j to island i.
+Next n lines follow with n integers (d_1, d_2, ..., d_n) each separated by a space. The integer number i on line j represents the distance in miles traveled over the bridge from island j to island i.
+Note: in all cases the cost of traveling from island i to island j is the same as the cost of traveling from island j to island i.
+Next M lines follow each with 3 integers: s, g, and b.
+s = the island Dave is starting on for this mission (1 indexed).
+g = the island Dave is instructed to travel to for this mission (1 indexed).
+b = the amount of money Dave is allowed to spend on this mission.
+
+Output:
+For each Mission m, output on a new line the distance of the shortest possible path on the given budget.
+If a mission cannot be completed because there is not enough budget to reach the goal island, output -1.
+
+Constraints:
+n = 75
+b <= 500
+1 <= c <= 99
+0 <= d <= 1000
+
+Sample Input:
+5
+3
+0 38 41 9 85 
+38 0 43 48 78 
+41 43 0 5 60 
+9 48 5 0 89 
+85 78 60 89 0 
+0 218 571 908 898 
+218 0 966 923 775 
+571 966 0 551 332 
+908 923 551 0 748 
+898 775 332 748 0 
+3 5 14
+2 1 54
+2 3 80
+
+Sample Output:
+-1
+218
+789

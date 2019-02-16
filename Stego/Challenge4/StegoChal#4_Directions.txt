@@ -1,0 +1,17 @@
+
+(40 pts) One image in this package has hidden data, which one is it?
+
+	A. Baboon_24A.bmp
+
+	B. Butterfly_24A.bmp
+
+	C. Dalmatian_24A.bmp
+
+	D. LionInGrass_24A.bmp
+
+	E. RockyBoxer_24A.bmp
+
+	F. TasmanianDevil_24A.bmp
+
+
+
